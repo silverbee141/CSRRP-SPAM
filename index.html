@@ -56,7 +56,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[-0.935081145823657,119.79751381640511],[-0.8986063565277767,119.87388150102214]]);
+        }).fitBounds([[-0.9379089539333714,119.83779181084272],[-0.901434164637491,119.91415949545974]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -197,23 +197,6 @@
 
         function style_HuntapDuyuAksesoris_1_0(feature) {
             switch(String(feature.properties['Nama'])) {
-                default:
-                    return {
-                pane: 'pane_HuntapDuyuAksesoris_1',
-                shape: 'diamond',
-                radius: 8.8,
-                opacity: 1,
-                color: 'rgba(61,128,53,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(221,237,39,1.0)',
-                interactive: true,
-            }
-                    break;
                 case 'Air Vent':
                     return {
                 pane: 'pane_HuntapDuyuAksesoris_1',
@@ -227,7 +210,24 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(78,145,232,1.0)',
+                fillColor: 'rgba(52,209,52,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Elbow 90°':
+                    return {
+                pane: 'pane_HuntapDuyuAksesoris_1',
+                shape: 'diamond',
+                radius: 8.8,
+                opacity: 1,
+                color: 'rgba(61,128,53,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(26,183,222,1.0)',
                 interactive: true,
             }
                     break;
@@ -244,7 +244,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(45,36,213,1.0)',
+                fillColor: 'rgba(36,205,137,1.0)',
                 interactive: true,
             }
                     break;
@@ -261,24 +261,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(77,100,175,1.0)',
-                interactive: true,
-            }
-                    break;
-                case 'Gate Valve DN':
-                    return {
-                pane: 'pane_HuntapDuyuAksesoris_1',
-                shape: 'diamond',
-                radius: 8.8,
-                opacity: 1,
-                color: 'rgba(61,128,53,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(200,105,187,1.0)',
+                fillColor: 'rgba(18,57,230,1.0)',
                 interactive: true,
             }
                     break;
@@ -295,11 +278,11 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(121,64,134,1.0)',
+                fillColor: 'rgba(214,80,212,1.0)',
                 interactive: true,
             }
                     break;
-                case 'Reducer (110mm-63mm)':
+                case 'Reducer':
                     return {
                 pane: 'pane_HuntapDuyuAksesoris_1',
                 shape: 'diamond',
@@ -312,24 +295,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(221,122,92,1.0)',
-                interactive: true,
-            }
-                    break;
-                case 'Reducer (160mm-110mm)':
-                    return {
-                pane: 'pane_HuntapDuyuAksesoris_1',
-                shape: 'diamond',
-                radius: 8.8,
-                opacity: 1,
-                color: 'rgba(61,128,53,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(15,180,18,1.0)',
+                fillColor: 'rgba(205,77,126,1.0)',
                 interactive: true,
             }
                     break;
@@ -346,7 +312,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(61,231,83,1.0)',
+                fillColor: 'rgba(202,61,26,1.0)',
                 interactive: true,
             }
                     break;
@@ -363,11 +329,11 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(240,158,128,1.0)',
+                fillColor: 'rgba(173,211,115,1.0)',
                 interactive: true,
             }
                     break;
-                case 'Tee DN (63mm x 32mm)':
+                case 'Tee DN':
                     return {
                 pane: 'pane_HuntapDuyuAksesoris_1',
                 shape: 'diamond',
@@ -380,11 +346,11 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(192,29,97,1.0)',
+                fillColor: 'rgba(231,193,43,1.0)',
                 interactive: true,
             }
                     break;
-                case 'Tee DN (63mm x 63mm)':
+                default:
                     return {
                 pane: 'pane_HuntapDuyuAksesoris_1',
                 shape: 'diamond',
@@ -397,7 +363,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(140,111,70,1.0)',
+                fillColor: 'rgba(140,72,234,1.0)',
                 interactive: true,
             }
                     break;
@@ -570,28 +536,67 @@
 
         function style_IPAPoboyaPipa_3_0(feature) {
             switch(String(feature.properties['Diameter'])) {
-                default:
+                case '32':
                     return {
                 pane: 'pane_IPAPoboyaPipa_3',
                 opacity: 1,
-                color: 'rgba(177,130,231,1.0)',
+                color: 'rgba(52,205,85,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
                     break;
-                case '200':
+                case '63':
                     return {
                 pane: 'pane_IPAPoboyaPipa_3',
                 opacity: 1,
-                color: 'rgba(30,200,194,1.0)',
+                color: 'rgba(90,160,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '110':
+                    return {
+                pane: 'pane_IPAPoboyaPipa_3',
+                opacity: 1,
+                color: 'rgba(154,33,229,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case '160':
+                    return {
+                pane: 'pane_IPAPoboyaPipa_3',
+                opacity: 1,
+                color: 'rgba(223,223,123,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                default:
+                    return {
+                pane: 'pane_IPAPoboyaPipa_3',
+                opacity: 1,
+                color: 'rgba(230,97,122,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -636,7 +641,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{"OSM Standard": layer_OSMStandard_4,'IPA Poboya (Pipa)<br /><table><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_2001.png" /></td><td>200</td></tr></table>': layer_IPAPoboyaPipa_3,'IPA Poboya (Titik)<br /><table><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_BPT10.png" /></td><td>BPT-1</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_BPT31.png" /></td><td>BPT-3</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_Reservoir100m32.png" /></td><td>Reservoir 100m3</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_Reservoir800Cubic3.png" /></td><td>Reservoir 800 Cubic</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_4.png" /></td><td></td></tr></table>': layer_IPAPoboyaTitik_2,'Huntap Duyu (Aksesoris)<br /><table><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_AirVent1.png" /></td><td>Air Vent</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_EndCapDN2.png" /></td><td>End Cap DN</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_GateValve3.png" /></td><td>Gate Valve</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_GateValveDN4.png" /></td><td>Gate Valve DN</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_IPAReservoir5.png" /></td><td>IPA & Reservoir</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_Reducer110mm63mm6.png" /></td><td>Reducer (110mm-63mm)</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_Reducer160mm110mm7.png" /></td><td>Reducer (160mm-110mm)</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_Reservoir100m38.png" /></td><td>Reservoir 100m3</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_StubFlange9.png" /></td><td>Stub Flange</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_TeeDN63mmx32mm10.png" /></td><td>Tee DN (63mm x 32mm)</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_TeeDN63mmx63mm11.png" /></td><td>Tee DN (63mm x 63mm)</td></tr></table>': layer_HuntapDuyuAksesoris_1,'JALUR RUAS DUYU<br /><table><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_320.png" /></td><td>32</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_631.png" /></td><td>63</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_1102.png" /></td><td>110</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_1603.png" /></td><td>160</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_4.png" /></td><td></td></tr></table>': layer_JALURRUASDUYU_0,}).addTo(map);
+        L.control.layers(baseMaps,{"OSM Standard": layer_OSMStandard_4,'IPA Poboya (Pipa)<br /><table><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_320.png" /></td><td>32</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_631.png" /></td><td>63</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_1102.png" /></td><td>110</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_1603.png" /></td><td>160</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaPipa_3_4.png" /></td><td></td></tr></table>': layer_IPAPoboyaPipa_3,'IPA Poboya (Titik)<br /><table><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_BPT10.png" /></td><td>BPT-1</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_BPT31.png" /></td><td>BPT-3</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_Reservoir100m32.png" /></td><td>Reservoir 100m3</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_Reservoir800Cubic3.png" /></td><td>Reservoir 800 Cubic</td></tr><tr><td style="text-align: center;"><img src="legend/IPAPoboyaTitik_2_4.png" /></td><td></td></tr></table>': layer_IPAPoboyaTitik_2,'Huntap Duyu (Aksesoris)<br /><table><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_AirVent0.png" /></td><td>Air Vent</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_Elbow901.png" /></td><td>Elbow 90°</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_EndCapDN2.png" /></td><td>End Cap DN</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_GateValve3.png" /></td><td>Gate Valve</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_IPAReservoir4.png" /></td><td>IPA & Reservoir</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_Reducer5.png" /></td><td>Reducer</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_Reservoir100m36.png" /></td><td>Reservoir 100m3</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_StubFlange7.png" /></td><td>Stub Flange</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_TeeDN8.png" /></td><td>Tee DN</td></tr><tr><td style="text-align: center;"><img src="legend/HuntapDuyuAksesoris_1_9.png" /></td><td></td></tr></table>': layer_HuntapDuyuAksesoris_1,'JALUR RUAS DUYU<br /><table><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_320.png" /></td><td>32</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_631.png" /></td><td>63</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_1102.png" /></td><td>110</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_1603.png" /></td><td>160</td></tr><tr><td style="text-align: center;"><img src="legend/JALURRUASDUYU_0_4.png" /></td><td></td></tr></table>': layer_JALURRUASDUYU_0,}).addTo(map);
         setBounds();
         var i = 0;
         layer_JALURRUASDUYU_0.eachLayer(function(layer) {
@@ -683,7 +688,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((exp_label_IPAPoboyaPipa_3_eval_expression(context) !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'Arial\', sans-serif;">' + exp_label_IPAPoboyaPipa_3_eval_expression(context)) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_IPAPoboyaPipa_3'});
+            layer.bindTooltip((exp_label_IPAPoboyaPipa_3_eval_expression(context) !== null?String('<div style="color: #323232; font-size: 10pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + exp_label_IPAPoboyaPipa_3_eval_expression(context)) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_IPAPoboyaPipa_3'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
