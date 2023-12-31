@@ -770,7 +770,7 @@ function exp_label_JALURRUASDUYU_0_eval_expression(context) {
 }
 
 
-function exp_label_HuntapDuyuTitik_1_eval_expression(context) {
+function exp_label_HuntapDuyuAksesoris_1_eval_expression(context) {
     // "Nama" || ' - ' || "Uk/Tipe" || ' ' || "Keterangan" || ' - ' || "Jumlah" || ' Unit'
 
     var feature = context.feature;
